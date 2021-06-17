@@ -1,0 +1,14 @@
+{
+  "name": "First",
+  "defaultLayout": "PhonePortrait",
+  "previewToken": "c2a6b142",
+  "theme": "Anchor",
+  "clientVersion": "6.1.2",
+  "hidden": false,
+  "isBuiltInTemplate": false,
+  "disableSideMenu": false,
+  "offlineSupport": false,
+  "description": "",
+  "creatorId": "admin",
+  "created": 1623932620780
+}

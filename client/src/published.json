@@ -1,0 +1,13 @@
+{
+  "smartuxApp": "1.0",
+  "version": "1.0.0",
+  "date": 1623932940362,
+  "creator": "SmartUX Admin",
+  "clientVersion": "6.1.2",
+  "id": "first_2",
+  "name": "First",
+  "serverVersion": "6.1.2",
+  "serverModulesIncluded": true,
+  "buildType": "AOT",
+  "cbUrl": "/cb"
+}

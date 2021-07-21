@@ -6,7 +6,10 @@
       "id": "loginred",
       "name": "Login-Red",
       "sourceScreenId": "Login_LoginRed",
-      "sourceAppId": "StrawberryTemplates"
+      "sourceAppId": "StrawberryTemplates",
+      "extraViews": [
+        "PhonePortrait"
+      ]
     }
   ],
   "statusbarContent": "dark",

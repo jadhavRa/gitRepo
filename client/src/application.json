@@ -1,6 +1,6 @@
 {
   "name": "First",
-  "defaultLayout": "PhonePortrait",
+  "defaultLayout": "Desktop",
   "previewToken": "c2a6b142",
   "theme": "Anchor",
   "clientVersion": "6.1.2",

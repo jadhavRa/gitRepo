@@ -1,0 +1,55 @@
+<ion-content class="" data-comp-id="content.1" data-img=""
+    style="background-image: url(assets/images/loginred/Red-Background.png);background-repeat: no-repeat;background-size: cover;">
+    <div data-comp-id="div.1" style="padding: 20% 15% 0;" text-center="">
+        <ion-icon class="ion-ios-information-circle" color="light" data-comp-id="icon.1"
+            style="font-size: 64px;"></ion-icon>
+        <div color="light" data-comp-id="text.1" ion-text="" style="margin: 10px;">APP NAME</div>
+        <div class="login-form" data-comp-id="div.2" style="margin: 75px 0px 0px 0px;">
+            <ion-row *ngIf="data.errorMessage" class="row-danger" data-comp-id="row.1"
+                style="border-top: 2px solid #ff0000; border-right: 2px solid #ff0000; border-bottom: 2px solid #ff0000; border-left: 2px solid #ff0000; margin: 10px 0px;">
+                <ion-col class="column-transparent" data-comp-id="column.1"
+                    style="text-align: center; max-width: auto; min-width: 100%; padding: 10px;">
+                    <div [innerHTML]="data.errorMessage" color="light" data-comp-id="text.2"
+                        ion-text="">Some text</div>
+                </ion-col>
+            </ion-row>
+            <form data-comp-id="form.1">
+                <ion-row data-comp-id="row.2">
+                    <ion-col data-comp-id="column.2" text-center="">
+                        <ion-list data-comp-id="list.1">
+                            <ion-item color="transparent" data-comp-id="input.1" style="padding: 0px;">
+                                <ion-label color="light" margin="" stacked="" text-left="">Username</ion-label>
+                                <ion-icon class="ion-ios-person" color="light" item-right=""></ion-icon>
+                                <ion-input [(ngModel)]="data.username" autocapitalize="off" autocorrect="off"
+                                    name="username" type="text"></ion-input>
+                            </ion-item>
+                            <ion-item color="transparent" data-comp-id="input.2"
+                                style="padding: 0px; margin: 10px 0px;">
+                                <ion-label color="light" margin="" stacked="" text-left="">Password</ion-label>
+                                <ion-icon class="fa fa-lock" color="light" item-right=""></ion-icon>
+                                <ion-input [(ngModel)]="data.password" name="password" type="password"></ion-input>
+                            </ion-item>
+                        </ion-list>
+                    </ion-col>
+                </ion-row>
+                <ion-row data-comp-id="row.3">
+                    <ion-col class="button-col" data-comp-id="column.3" text-center="">
+                        <button (click)="action('submit')" block="" class="button-label-danger"
+                            color="light" data-comp-id="button.1" ion-button="" style="margin: 10px 0px;"><span>Login</span></button>
+                    </ion-col>
+                </ion-row>
+            </form>
+        </div>
+        <ion-row data-comp-id="row.4" style="margin: 0px 0px;">
+            <ion-col data-comp-id="column.4" style="padding: 0px; text-align: center;">
+                <touchid-login [context]="this" (onVerify)="action('submit')" data-comp-id="touchid-login.1"
+                    style="padding: 15px;">
+                    <div color="light" data-comp-id="text.3" ion-text="">
+                        Log in with {{getBiometricAuthType()}}
+                    </div>
+                    <ion-icon color="light" data-comp-id="icon.2" name="finger-print"></ion-icon>
+                </touchid-login>
+            </ion-col>
+        </ion-row>
+    </div>
+</ion-content>

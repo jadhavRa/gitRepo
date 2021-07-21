@@ -1,8 +1,16 @@
 {
   "id": "__BASE__",
   "name": "First",
-  "screens": [],
+  "screens": [
+    {
+      "id": "loginred",
+      "name": "Login-Red",
+      "sourceScreenId": "Login_LoginRed",
+      "sourceAppId": "StrawberryTemplates"
+    }
+  ],
   "statusbarContent": "dark",
   "statusbarHidden": false,
-  "statusbarBackground": null
+  "statusbarBackground": null,
+  "startScreen": "loginred"
 }
